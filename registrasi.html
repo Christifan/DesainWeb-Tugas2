@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple HTML Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="background-color: #2e3440">
+    <table style="width: 100%; box-shadow: 5px 0px 10px #64728c">
+        <tr>
+            <td style="width: 50px">
+                <img src="img\html-5.png" alt="HTML 5 Logo" Style="width: 75px; height: 75px;">
+            </td>
+            <td>
+                <h1 style="color: orangered; font-family: verdana; font-weight: bold">My Simple HTML Style</h1>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table style="margin-left: auto; width: 100%">
+        <tr>
+            <td style="color: white; font-family: verdana; font-size: 12pt; font-weight: bold">Registration</td>
+            <td style="width: 100px; text-align: right;">
+                <form action="index.html">
+                    <input type="submit" name="home" value="Home" style="width: 7em; height: 2em; border: none; background-color: #64728c; color: white; font-family: verdana; font-size: medium;">
+                </form>
+            </td>
+            <td style="width: 100px; text-align: right;">
+                <form action="jadwal.html">
+                    <input type="submit" name="timetable" value="Timetable" style="width: 7em; height: 2em; border: none; background-color: #64728c; color: white; font-family: verdana; font-size: medium;">
+                </form>
+            </td>
+            <td style="width: 100px; text-align: right;">
+                <form action="registrasi.html">
+                    <input type="submit" name="registrasi" value="Registration" style="width: 7em; height: 2em; border: none; background-color: #64728c; color: white; font-family: verdana; font-size: medium;">
+                </form>
+            </td>
+            <td style="width: 100px; text-align: right;">
+                <form action="bio.html">
+                    <input type="submit" name="biodata" value="Biodata" style="width: 7em; height: 2em; border: none; background-color: #64728c; color: white; font-family: verdana; font-size: medium;">
+                </form>
+            </td>
+            <td style="width: 100px; text-align: right;">
+                <form action="about.html">
+                    <input type="submit" name="about" value="About" style="width: 7em; height: 2em; border: none; background-color: #64728c; color: white; font-family: verdana; font-size: medium;">
+                </form>
+            </td>
+            <td style="width: 10px">&nbsp;</td>
+        </tr>
+    </table>
+    <hr>
+    
+    <table style="width: 100%; font-family: verdana; color: white; font-size: 11pt;">
+        <tr>
+            <td width="15%">&nbsp;</td>
+            <td>
+                <h3>Form Registration</h3>
+                <hr>
+                <form>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="fname">Full Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Your name" value="" 
+                               style="width: 300px; margin: 5px 0; padding: 10px 15px; border: 1px solid #ccc; display: inline-block;
+                               border-radius: 4px; box-sizing: border-box;"><br>
+                                                
+                        <label for="fname">Student ID Number</label><br>
+                        <input type="text" id="nim" name="nim" placeholder="ID Numer" value="" 
+                               style="width: 200px; margin: 5px 0; padding: 10px 15px; border: 1px solid #ccc; display: inline-block;
+                               border-radius: 4px; box-sizing: border-box;"><br>
+                        Sex<br>
+                        <input type="radio" id="male" name="studentSex" value="Male" checked="checked">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="studentSex" value="Female">
+                        <label for="female">Female</label><br>
+                        
+                        
+                    </fieldset>
+                    <fieldset>
+                        <legend>Interest in Programming Language</legend>
+                        <table>
+                            <tr>
+                                <td width="200px">
+                                    <input type="checkbox" id="language1" name="language1" value="Java">
+                                    <label for="language1"> Java</label><br>
+                                    <input type="checkbox" id="language2" name="language2" value="C/C++">
+                                    <label for="language2"> C/C++</label><br>
+                                    <input type="checkbox" id="language3" name="language3" value="C#">
+                                    <label for="language3"> C#</label><br>
+                                    <input type="checkbox" id="language4" name="language4" value="Pascal/Delphi">
+                                    <label for="language4"> Pascal/Delphi</label><br>
+                                </td>
+                                <td>
+                                    <input type="checkbox" id="language5" name="language5" value="HTML">
+                                    <label for="language5"> HTML</label><br>
+                                    <input type="checkbox" id="language6" name="language6" value="PHP">
+                                    <label for="language6"> PHP</label><br>
+                                    <input type="checkbox" id="language7" name="language7" value="Javascript">
+                                    <label for="language7"> Javascript</label><br>
+                                    <input type="checkbox" id="language8" name="language8" value="Ajax">
+                                    <label for="language8"> Ajax</label><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <label for="password">Security Password</label><br>
+                    <input type="password" id="password" name="password" value="" placeholder="Password" 
+                           style="width: 300px; margin: 5px 0; padding: 10px 15px; border: 1px solid #ccc; display: inline-block;
+                           border-radius: 4px; box-sizing: border-box;"><br>
+                    <input type="submit" id="submit" name="submit" value="Submit"
+                           style="width: 100px; background-color: #04AA6D; color: white; padding: 14px 20px; margin: 8px 0; border: none; border-radius: 4px;">
+                    <input type="reset" id="reset" name="Reset"
+                           style="width: 100px; background-color: #04AA6D; color: white; padding: 14px 20px; margin: 8px 0; border: none; border-radius: 4px;">
+                </form>
+            </td>
+            <td width="15%">&nbsp;</td>
+        </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <table style="width: 100%; border-bottom: thick solid white; border-top:  solid white; font-family: verdana; font-size: 8pt; color: white">
+        <tr>
+            <td style="width: 10%">&nbsp;</td>
+            <td>Tugas 2 - &copy;Chrosxz@gmail.com</td>
+            <td style="width: 10%">&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>
